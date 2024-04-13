@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dvillavicencioT2.Vistas.vInicio"
+             Title="vInicio">
+    <VerticalStackLayout>
+       
+            <Label 
+            Text="Calificaciones UISRAEL"
+            TextColor="Blue"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="2"
+         />
+
+        <Picker x:Name="pkAlumnos" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Title="Alumnos" FontSize="15" >
+                <Picker.Items >
+                    <x:String>DIEGO VILLAVICENCIO</x:String>
+                    <x:String>BRYAN BOHORQUEZ</x:String>
+                    <x:String>JESUS ABARCA</x:String>
+                    <x:String>RENATO TOASA</x:String>
+                    <x:String>KATHERINE CATOTA</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label x:Name="lblPeriodo1"
+               Text="Periodo 1"
+                FontSize="20"
+                TextColor="Red"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                
+             />
+        
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="400" />
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblNotaC1"
+                Text="Nota 1"
+                FontSize="15"
+                TextColor="Green"
+                Grid.Row="6"
+                Grid.Column="0" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC1" 
+               Placeholder= "Ingrese la calificación"
+                MaxLength="15"
+                Grid.Row="6"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+             />
+            
+            <Label x:Name="lblNotaC2"
+                Text="Nota 2"
+                FontSize="15"
+                TextColor="Green"
+                Grid.Row="7"
+                Grid.Column="0" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC2" 
+                Placeholder= "Ingrese la calificación Examen"
+                MaxLength="10"
+                Grid.Row="7"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+
+            <Label x:Name="lblNotaC3"
+                Text="Nota Parcial 1"
+                FontSize="15"
+                TextColor="Green"
+                Grid.Row="8"
+                Grid.Column="0" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC3" 
+                Placeholder= "Su calificación es"
+                MaxLength="10"
+                Grid.Row="8"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+        </Grid>
+        
+        
+        
+        <Label x:Name="lblPeriodo2"
+                Text="Periodo 2"
+                FontSize="20"
+                TextColor="Red"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"  
+                />
+                
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="400" />
+            </Grid.ColumnDefinitions>
+                
+            <Label x:Name="lblNotaC4"
+                Text="Notas 1"
+                FontSize="15"
+                TextColor="Blue"
+                Grid.Row="10"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC4" 
+                Placeholder= "Ingrese la calificación"
+                MaxLength="10"
+                Grid.Row="10"
+                Grid.Column="1" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label x:Name="lblNotaC5"
+                Text="Notas 2"
+                FontSize="15"
+                TextColor="Blue"
+                Grid.Row="11"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC5" 
+                Placeholder= "Ingrese la calificación Examen"
+                MaxLength="10"
+                Grid.Row="11"
+                Grid.Column="1" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+
+            <Label x:Name="lblNotasC6"
+                Text="Nota Parcial 2"
+                FontSize="15"
+                TextColor="Blue"
+                Grid.Row="12"
+                Grid.Column="0" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoC6" 
+                Placeholder= "Su calificación es"
+                MaxLength="10"
+                Grid.Row="12"
+                Grid.Column="1" 
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+        </Grid>
+
+        <Label x:Name="lblPFinal"
+                    Text="Periodo Final"
+                    FontSize="20"
+                    TextColor="Red"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center" 
+                    />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="400" />
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lblNotaFinal"
+                Text="Nota Final"
+                FontSize="15"
+                TextColor="Orange"
+                Grid.Row="13"
+                Grid.Column="0"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+            <Entry x:Name="txtDatoNF" 
+                Placeholder= "Su nota final es"
+                MaxLength="10"
+                Grid.Row="13"
+                Grid.Column="1"  
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                   />
+
+            <DatePicker x:Name="dpFecha" 
+                    Format="mm/dd/yyyy"
+                    Grid.Row="14"
+                    Grid.Column="1" 
+                    
+                        />
+
+            <Label x:Name="lblFecha1"
+                   Text="Fecha:"
+                   FontSize="15"
+                   TextColor="Red"
+                   Grid.Row="14"
+                   Grid.Column="0" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   />
+
+            <Label x:Name="lblEstado"
+               Text="Estado"
+               FontSize="15"
+               TextColor="Brown"
+               Grid.Row="15"
+               Grid.Column="0"    
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"    
+                   />
+            <Entry x:Name="txtEstado" 
+               Placeholder= "Usted esta:"
+               MaxLength="15"
+               Grid.Row="15"
+               Grid.Column="1"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+                   />
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="200" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnPicker3"
+                Text="Calcular"
+                Clicked="btnPicker3_Clicked"
+                Grid.Row="16"
+                Grid.Column="1"
+                    />
+
+            <Button x:Name="btnPicker"
+               Text="Imprimir resultado"
+               Clicked="btnPicker_Clicked"
+               Grid.Row="16"
+               Grid.Column="2" 
+                    />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
