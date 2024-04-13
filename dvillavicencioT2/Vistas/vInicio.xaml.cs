@@ -69,19 +69,21 @@ public partial class vInicio : ContentPage
         else
         {
             string dato = pkAlumnos.Items[pkAlumnos.SelectedIndex].ToString();
-            DisplayAlert("Alerta", "El elemento seleccionado es " + dato, "Cerrar");
+            string fecha = dpFecha.Date.ToString("MM/dd/yyyy");
+            string notaParcial1 = txtDatoC3.Text;
+            string notaParcial2 = txtDatoC6.Text;
+            string notaFinal = txtDatoNF.Text;
+            string estado = txtEstado.Text;
+            DisplayAlert("Las notas del estudiante son:",
+            $"Nombre: {dato}\n" +
+            $"Fecha: {fecha} \n" +
+            $"Nota Parcial 1: {notaParcial1}\n" +
+            $"Nota Parcial 2: {notaParcial2}\n" +
+            $"Nota Final: {notaFinal}\n" +
+            $"Estado: {estado}",
+            "Cerrar");
+            
         }
-    }
-
-    private void btnPicker1_Clicked(object sender, EventArgs e)
-    {
-        
-
-    }
-
-    private void btnPicker2_Clicked(object sender, EventArgs e)
-    {
-        
     }
 
     private void btnPicker3_Clicked(object sender, EventArgs e)
