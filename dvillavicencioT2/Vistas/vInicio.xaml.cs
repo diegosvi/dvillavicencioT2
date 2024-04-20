@@ -2,17 +2,26 @@ namespace dvillavicencioT2.Vistas;
 
 public partial class vInicio : ContentPage
 {
-    public vInicio()
+    public vInicio(String usuario)
     {
         InitializeComponent();
+        DisplayAlert("Alerta", "Bienvenido " + usuario, "Cerrar");
+        lblUsuario.Text = "Usuario conectado " + usuario;
     }
 
     private void CalcularSuma()
     {
         if (double.TryParse(txtDatoC1.Text, out double valor1) && double.TryParse(txtDatoC2.Text, out double valor2))
         {
-            double suma = valor1*0.3 + valor2*0.2;
-            txtDatoC3.Text = suma.ToString();
+            if (valor1 >= 0 && valor1 <= 10 && valor2 >= 0 && valor2 <= 10)
+            {
+                double suma = valor1 * 0.3 + valor2 * 0.2;
+                txtDatoC3.Text = suma.ToString();
+            }
+            else
+            {
+                txtDatoC3.Text = "Ingrese valores válidos (entre 0 y 10)";
+            }
         }
         else
         {
@@ -24,8 +33,15 @@ public partial class vInicio : ContentPage
     {
         if (double.TryParse(txtDatoC4.Text, out double valor1) && double.TryParse(txtDatoC5.Text, out double valor2))
         {
-            double suma = valor1 * 0.3 + valor2 * 0.2;
-            txtDatoC6.Text = suma.ToString();
+            if (valor1 >= 0 && valor1 <= 10 && valor2 >= 0 && valor2 <= 10)
+            {
+                double suma = valor1 * 0.3 + valor2 * 0.2;
+                txtDatoC6.Text = suma.ToString();
+            }
+            else
+            {
+                txtDatoC6.Text = "Ingrese valores válidos (entre 0 y 10)";
+            }
         }
         else
         {
@@ -33,34 +49,43 @@ public partial class vInicio : ContentPage
         }
     }
 
+
     private void CalcularSuma3()
     {
         if (double.TryParse(txtDatoC3.Text, out double valor1) && double.TryParse(txtDatoC6.Text, out double valor2))
+    {
+        if (valor1 + valor2 >= 0 && valor1 + valor2 <= 10)
         {
             double suma = valor1 + valor2;
             txtDatoNF.Text = suma.ToString();
-        
-        if (suma >= 7)
-        {
-            txtEstado.Text = "Aprobado";
-        }
-        else if (suma >= 5 && suma <= 6.9)
-        {
-            txtEstado.Text = "Complementario";
+
+            if (suma >= 7 && suma<=10)
+            {
+                txtEstado.Text = "Aprobado";
+            }
+            else if (suma >= 5 && suma <= 6.9)
+            {
+                txtEstado.Text = "Complementario";
+            }
+            else
+            {
+                txtEstado.Text = "Reprobado";
+            }
         }
         else
         {
-            txtEstado.Text = "Reprobado";
+            txtDatoNF.Text = "La nota final debe estar entre 0 y 10";
+            txtEstado.Text = "";
         }
     }
     else
-            {
-                txtDatoC3.Text = "Ingrese valores numéricos válidos";
-                txtEstado.Text = "";
-            }
-        }
+    {
+        txtDatoNF.Text = "Ingrese valores numéricos válidos";
+        txtEstado.Text = "";
+    }
+}
 
-    private void btnPicker_Clicked(object sender, EventArgs e)
+private void btnPicker_Clicked(object sender, EventArgs e)
     {
         if (pkAlumnos.SelectedIndex == -1)
         {

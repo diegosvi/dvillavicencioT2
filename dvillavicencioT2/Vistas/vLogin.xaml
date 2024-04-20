@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dvillavicencioT2.Vistas.vLogin"
+             >
+    <VerticalStackLayout 
+        Spacing="25"
+        Padding="30">
+
+        <Image x:Name="img"
+         Source="UISRAEL.png"
+         HeightRequest="100"
+         />
+        
+        <Label 
+          Text="LOGIN" 
+          TextColor="Red"
+          FontSize="24"
+          HorizontalTextAlignment="Center"/>
+       
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="USUARIO" 
+         TextColor="Blue"
+         Grid.Row="0"
+         Grid.Column="0"
+         VerticalTextAlignment="Center"
+         HorizontalTextAlignment="Center"/>
+
+            <Entry x:Name="txtUsuario" 
+            Placeholder="Ingrese su nombre"
+            Grid.Row="0"
+            Grid.Column="1"/>
+
+            <Label Text="CONTRASEÑA"
+        TextColor="blue"
+        Grid.Row="1"
+        Grid.Column="0"
+        VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+            <Entry x:Name="txtContraseña" 
+            Placeholder="Ingrese su contraseña"
+            IsPassword="True"
+            Grid.Row="1"
+            Grid.Column="1"/>
+        </Grid>
+        <Button x:Name="btnInicio"
+         Text="INICIAR SESION"
+         Clicked="btnInicio_Clicked"
+         />
+
+        
+    </VerticalStackLayout>
+</ContentPage>
