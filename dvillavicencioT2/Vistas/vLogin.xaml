@@ -7,17 +7,11 @@
         Spacing="25"
         Padding="30">
 
-        <Image x:Name="img"
-         Source="UISRAEL.png"
-         HeightRequest="100"
-         />
-        
-        <Label 
-          Text="LOGIN" 
-          TextColor="Red"
-          FontSize="24"
-          HorizontalTextAlignment="Center"/>
-       
+        <Image x:Name="imagen"
+               Source="uisrael.png"
+               HeightRequest="100"
+               />
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>

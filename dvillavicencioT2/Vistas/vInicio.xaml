@@ -5,6 +5,12 @@
              >
     <ScrollView>
         <VerticalStackLayout Padding="20,0" Spacing="5">
+            <Image x:Name="imagen1"
+                   Source="uisrael.png"
+                   HeightRequest="100"
+                   />
+
+
             <Label x:Name="lblUsuario"
                    HorizontalTextAlignment="End"
                    FontSize="14"/>
@@ -100,7 +106,7 @@
                    />
                 <Entry x:Name="txtDatoC3" 
                 Placeholder= "Su calificación es"
-                MaxLength="10"
+                MaxLength="50"
                 Grid.Row="8"
                 Grid.Column="1"
                    />
@@ -181,7 +187,7 @@
                    />
                 <Entry x:Name="txtDatoC6" 
                 Placeholder= "Su calificación es"
-                MaxLength="10"
+                MaxLength="50"
                 Grid.Row="12"
                 Grid.Column="1" 
                    />
@@ -232,7 +238,7 @@
                    />
                 <Entry x:Name="txtDatoNF" 
                 Placeholder= "Su nota final es"
-                MaxLength="10"
+                MaxLength="50"
                 Grid.Row="13"
                 Grid.Column="1"  
                    />

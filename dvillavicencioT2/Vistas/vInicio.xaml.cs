@@ -20,7 +20,7 @@ public partial class vInicio : ContentPage
             }
             else
             {
-                txtDatoC3.Text = "Ingrese valores válidos (entre 0 y 10)";
+                txtDatoC3.Text = "Ingrese la calificación 0 y 10";
             }
         }
         else
@@ -40,7 +40,7 @@ public partial class vInicio : ContentPage
             }
             else
             {
-                txtDatoC6.Text = "Ingrese valores válidos (entre 0 y 10)";
+                txtDatoC6.Text = "Ingrese la calificación 0 y 10";
             }
         }
         else
